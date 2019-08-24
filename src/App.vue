@@ -3,6 +3,10 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/products">New Products</router-link> | 
+      <router-link to="{name: 'gender-overview', params:{gender: 'women'}}">  
+        Women   </router-link> |  
+      <router-link to="{name: 'gender-overview', params:{gender: 'men'}}">  
+        Men   </router-link> |  
       <router-link to="/cart">Cart
         <counter-badge :count="cartCount" class="counter"></counter-badge>
       </router-link>

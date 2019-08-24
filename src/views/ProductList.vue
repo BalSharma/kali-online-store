@@ -3,12 +3,10 @@
      <section class="wrapper">
        <h3>Featured Items</h3>
         <ul class="featured-items">
-          <li v-for="product in products" :key="product.id" 
-            class="featured-items__item">
+            <li v-for="product in featuredProducts" :key="product.id" 
+            class="featured-items__item">          
             <router-link :to="{name: 'product', params: {id: product.id}}">
-              <!-- <img :src="imagePath(product)" alt="" class="product-image" /> -->
               <img :src="makeImagePath(product)" alt="" class="product-image" />
-
               <p class="product-title">{{product.name}}</p>
               <p><em>${{product.price}}</em></p>
             </router-link>
@@ -26,6 +24,13 @@ export default {
   computed: {
     products (){
       return this.$store.state.products;
+    },
+    featuredProducts() {
+      // limit items to 3
+      // slice(0,3) method returns new array of items based on a starting 
+      // index and an ending index for the original array. Note: javascript
+      // will not include the item found at the ending index.
+      return this.$store.getters.featuredProducts.slice(0,3);
     }
   }  
 }
