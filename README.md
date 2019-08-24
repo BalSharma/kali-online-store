@@ -1,8 +1,10 @@
 # Kali's online-store
 
 ```
-> I have followed Nathan Magyar, University of Michigan VueJs part 1 to 8 for this online application. <br/> I have changed some stuffs, but base is from his 'Medium' web post.<br/> Thank you, Wolverine Gretting from Sparty! It is helping me to learn VueJs.
-I will try to > follow & complete all your projects. Hopefully, it will give me
+I have followed Nathan Magyar, University of Michigan VueJs part 1 to 8 for this
+online application.I have changed some stuffs, but base is from his 'Medium' web
+post. Thank you, Wolverine Gretting from Sparty! It is helping me to learn VueJs.
+I will try to follow & complete all your projects. Hopefully, it will give me
 enough vuejs skills.
 
 I found lots of css & filed up with linting warnings, I do not know how to fix
